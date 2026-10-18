@@ -271,3 +271,111 @@ nav button {
     background: linear-gradient(to left, transparent, var(--main-color));
     
 }
+
+
+.left-side {
+  background-color: #f8faf9;
+  padding: 32px !important;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.left-side > h3 {
+  color: #1f2933;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.form h3 {
+  color: #1f2933;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.form p {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.formy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.formaa {
+  width: calc(50% - 9px);
+}
+
+.formaea {
+  width: 100%;
+}
+
+.formaa input,
+.formaea input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1f2933;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formaa input::placeholder,
+.formaea input::placeholder {
+  color: #9ca3af;
+}
+
+.formaa input:focus,
+.formaea input:focus {
+  border-color: #2e7d5b;
+  box-shadow: 0 0 0 3px rgba(46, 125, 91, 0.12);
+}
+
+.btnfit {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2e7d5b;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btnfit:hover {
+  background-color: #246447;
+  transform: translateY(-2px);
+}
+
+.btnfit:focus-visible {
+  outline: 3px solid #8bc5a7;
+  outline-offset: 3px;
+}
+
+@media (max-width: 576px) {
+  .left-side {
+    padding: 20px !important;
+  }
+
+  .left-side > h3 {
+    font-size: 24px;
+    padding: 12px !important;
+  }
+
+  .form h3 {
+    font-size: 21px;
+  }
+
+  .formaa {
+    width: 100%;
+  }
+}
