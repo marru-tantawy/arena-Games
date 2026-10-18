@@ -1,0 +1,273 @@
+:root {
+    --main-color: rgb(203, 254, 28) ;
+    --dark-color: #0b0e13 ;
+    --text-4xl: 4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) ,  url(../images/hero-bg.jpg) ;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    
+}
+.bg-navy {
+    background-color: var(--dark-color);
+}
+
+.text-main {
+    color: var(--main-color);
+}
+.bg-main {
+    background-color: var(--main-color);
+}
+.border-main {
+    border: 2px solid var(--main-color) ;
+}
+nav {
+    background-color: var(--dark-color);
+}
+
+nav ul {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: var(--main-color);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+nav li.active a {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+nav button {
+    background-color: var(--main-color);
+}
+
+
+
+
+.text-4xl {
+    font-size: var(--text-4xl);
+}
+
+.buttons .ndbtn:hover {
+    background-color: var(--main-color) !important;
+    color: black !important;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.cup {
+    left: -30px;
+}
+
+.hero {
+    height: 400px;
+}
+
+
+@media (max-width : 950px) {
+    nav Ul li {
+       display: none !important;
+    }
+    .bar {
+        display: block !important;
+         cursor: pointer;
+    }
+    .bar:hover Ul li {
+          display: block !important;
+          
+    }
+    
+}
+
+
+.s-two .latest-Games {
+    gap: 9px;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+.latest-Games::before , .latest-Games::after {
+    content: "";
+    background-color: var(--main-color);
+    height: 4px;
+    width: 80px;
+     background: linear-gradient(to right, transparent, var(--main-color));
+     margin:0 9px;
+}
+
+.latest-Games::after {
+    background: linear-gradient(to left, transparent, var(--main-color));
+}
+
+.nextbtn button {
+    border:  2px solid grey;
+    margin-top: 20px;
+}
+.nextbtn button:hover  {
+    border:  2px solid  rgb(203, 254, 28);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.nextbtn .viw:hover{
+    background-color: var(--main-color) !important;
+    color: var(--dark-color) !important;
+    
+}
+
+.rd-section .latest-Games{
+    gap: 9px;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    justify-content: center;
+}
+
+
+.rd-section .rddiv::after {
+    content: "";
+    background-color: var(--main-color);
+    height: 6px;
+    width: 60%;
+     background: linear-gradient( transparent, var(--main-color));
+     box-shadow: 0 0 10px var(--main-color), 0 0 20px #cbfe1c4d;
+    align-self: center;
+}
+.sclgame {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.scroll-right {
+    animation:scroll-right 15s linear infinite ;
+    -webkit-animation:scroll-right 20s linear infinite ;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    width: max-content;
+}
+.scroll-left {
+    animation:scroll-left 15s linear infinite ;
+    -webkit-animation:scroll-left 20s linear infinite ;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    width: max-content;
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+  to {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+  to {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+}
+
+.aftr-3 {
+  position: relative;
+  top: 50%;       /* لتوسيط عمودي */
+  left: 50%;      /* لتوسيط أفقي */
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 25%;
+  border-radius: 2rem; /* بدل rounded-5 */
+  background: linear-gradient(to bottom, transparent, var(--main-color));
+  z-index: -10;   /* يفضل تحت الكاروسيل */
+}
+
+.text-gray {
+    color: gray;
+}
+
+.member::before {
+    content: "";
+    background: inherit;
+    -webkit-backdrop-filter: grayscale()brightness(.9);
+    backdrop-filter: grayscale() brightness(.9);
+    z-index: 1;
+    height: 100%;
+    transition: transform .8s cubic-bezier(.4, 0, .2, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(0);
+}
+
+.member:hover::before {
+    opacity: 0;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+
+.contact {
+    background-color: oklch(27.8% .033 256.848);
+}
+
+.bg-lightblue {
+    background-color: oklch(43.764% 0.04731 256.699);
+}
+.bg-lightgrn {
+    background: linear-gradient(to left, transparent, var(--main-color));
+    
+}
